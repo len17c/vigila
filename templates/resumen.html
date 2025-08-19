@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial</title>
+</head>
+<body>
+    <h1>Resumen de datos</h1>
+    <hr>
+    <table>
+        <tr><th>Fecha</th><th>Vigilante</th><th>Sección</th><th>Estado</th><th>Anotaciones</th></tr>
+        {% for dato in datos %}
+        <tr><td>{{ dato.fecha }}</td><td>{{ dato.vigilante }}</td><td>{{ dato.seccion }}</td><td>{{ dato.estado }}</td><td>{{ dato.anotacion }}</td></tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
